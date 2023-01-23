@@ -18,4 +18,4 @@ app.use(bodyParser.urlencoded({
 app.post('/login', login)
 app.post('/encode', auth, encode)
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+module.exports = app.listen(port, () => { console.log(`Example app listening on port ${port}!`) })
